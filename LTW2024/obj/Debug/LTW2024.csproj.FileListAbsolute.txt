@@ -1,0 +1,17 @@
+D:\aaaaaaaaaaaaaaaaaa\SPKT\LTW\LTW2024\LTW2024\bin\Debug\LTW2024.exe.config
+D:\aaaaaaaaaaaaaaaaaa\SPKT\LTW\LTW2024\LTW2024\bin\Debug\LTW2024.exe
+D:\aaaaaaaaaaaaaaaaaa\SPKT\LTW\LTW2024\LTW2024\bin\Debug\LTW2024.pdb
+D:\aaaaaaaaaaaaaaaaaa\SPKT\LTW\LTW2024\LTW2024\bin\Debug\Guna.UI2.dll
+D:\aaaaaaaaaaaaaaaaaa\SPKT\LTW\LTW2024\LTW2024\obj\Debug\LTW2024.csproj.AssemblyReference.cache
+D:\aaaaaaaaaaaaaaaaaa\SPKT\LTW\LTW2024\LTW2024\obj\Debug\LTW2024.Properties.Resources.resources
+D:\aaaaaaaaaaaaaaaaaa\SPKT\LTW\LTW2024\LTW2024\obj\Debug\LTW2024.csproj.GenerateResource.cache
+D:\aaaaaaaaaaaaaaaaaa\SPKT\LTW\LTW2024\LTW2024\obj\Debug\LTW2024.csproj.CoreCompileInputs.cache
+D:\aaaaaaaaaaaaaaaaaa\SPKT\LTW\LTW2024\LTW2024\obj\Debug\LTW2024.csproj.Up2Date
+D:\aaaaaaaaaaaaaaaaaa\SPKT\LTW\LTW2024\LTW2024\obj\Debug\LTW2024.exe
+D:\aaaaaaaaaaaaaaaaaa\SPKT\LTW\LTW2024\LTW2024\obj\Debug\LTW2024.pdb
+D:\aaaaaaaaaaaaaaaaaa\SPKT\LTW\LTW2024\LTW2024\obj\Debug\LTW2024.Login.resources
+D:\aaaaaaaaaaaaaaaaaa\SPKT\LTW\LTW2024\LTW2024\obj\Debug\LTW2024.UI.MainForm.resources
+D:\aaaaaaaaaaaaaaaaaa\SPKT\LTW\LTW2024\LTW2024\obj\Debug\LTW2024.UI.Home.resources
+D:\aaaaaaaaaaaaaaaaaa\SPKT\LTW\LTW2024\LTW2024\obj\Debug\LTW2024.UI.Warehouse.resources
+D:\aaaaaaaaaaaaaaaaaa\SPKT\LTW\LTW2024\LTW2024\obj\Debug\LTW2024.UI.Menu.resources
+D:\aaaaaaaaaaaaaaaaaa\SPKT\LTW\LTW2024\LTW2024\obj\Debug\LTW2024.UI.StaffManagement.resources

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LTW2024", "LTW2024\LTW2024.csproj", "{E38CCD39-012E-439B-92A2-6B37005CDACB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E38CCD39-012E-439B-92A2-6B37005CDACB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E38CCD39-012E-439B-92A2-6B37005CDACB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E38CCD39-012E-439B-92A2-6B37005CDACB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E38CCD39-012E-439B-92A2-6B37005CDACB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FED99F94-93C4-43F2-BD37-432D8F5A3654}
+	EndGlobalSection
+EndGlobal
