@@ -15,6 +15,7 @@ namespace LTW2024.UI
         public MainForm()
         {
             InitializeComponent();
+            timer1.Start();
         }
         private Form currentFormChild;
         private void OpenChildForm(Form childForm)
@@ -88,6 +89,11 @@ namespace LTW2024.UI
         private void pnMain_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lbTime.Text = DateTime.Now.ToString();
         }
     }
 }

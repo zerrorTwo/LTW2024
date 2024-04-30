@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pnMain = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -40,8 +41,13 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lbName = new System.Windows.Forms.Label();
+            this.lbTime = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -50,9 +56,9 @@
             this.panel1.Controls.Add(this.pnMain);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 131);
+            this.panel1.Location = new System.Drawing.Point(0, 168);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1288, 666);
+            this.panel1.Size = new System.Drawing.Size(1525, 666);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -61,7 +67,7 @@
             this.pnMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnMain.Location = new System.Drawing.Point(245, 0);
             this.pnMain.Name = "pnMain";
-            this.pnMain.Size = new System.Drawing.Size(1041, 664);
+            this.pnMain.Size = new System.Drawing.Size(1278, 664);
             this.pnMain.TabIndex = 1;
             this.pnMain.Paint += new System.Windows.Forms.PaintEventHandler(this.pnMain_Paint);
             // 
@@ -218,10 +224,13 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.lbTime);
+            this.panel3.Controls.Add(this.lbName);
+            this.panel3.Controls.Add(this.label1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(245, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1043, 131);
+            this.panel3.Size = new System.Drawing.Size(1280, 168);
             this.panel3.TabIndex = 1;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
@@ -233,15 +242,49 @@
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(245, 131);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(245, 168);
             this.flowLayoutPanel1.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Mistral", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(32, 51);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(152, 41);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "XIN CHÀO!";
+            // 
+            // lbName
+            // 
+            this.lbName.AutoSize = true;
+            this.lbName.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbName.Location = new System.Drawing.Point(177, 92);
+            this.lbName.Name = "lbName";
+            this.lbName.Size = new System.Drawing.Size(227, 39);
+            this.lbName.TabIndex = 1;
+            this.lbName.Text = "Lê Chí Nghĩa";
+            // 
+            // lbTime
+            // 
+            this.lbTime.AutoSize = true;
+            this.lbTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTime.Location = new System.Drawing.Point(796, 92);
+            this.lbTime.Name = "lbTime";
+            this.lbTime.Size = new System.Drawing.Size(109, 39);
+            this.lbTime.TabIndex = 2;
+            this.lbTime.Text = "label2";
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(250)))), ((int)(((byte)(238)))));
-            this.ClientSize = new System.Drawing.Size(1288, 797);
+            this.ClientSize = new System.Drawing.Size(1525, 834);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.panel1);
@@ -252,6 +295,8 @@
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -270,5 +315,9 @@
         private Guna.UI2.WinForms.Guna2Button btnHome;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel pnMain;
+        private System.Windows.Forms.Label lbTime;
+        private System.Windows.Forms.Label lbName;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Timer timer1;
     }
 }

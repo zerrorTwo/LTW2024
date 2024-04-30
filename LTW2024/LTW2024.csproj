@@ -169,5 +169,14 @@
   <ItemGroup>
     <None Include="Assets\logout.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\group.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\sync.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\magnifying-glass.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
