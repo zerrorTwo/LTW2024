@@ -178,5 +178,17 @@
   <ItemGroup>
     <None Include="Assets\magnifying-glass.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\caret-arrow-up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\dollar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\remove.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
