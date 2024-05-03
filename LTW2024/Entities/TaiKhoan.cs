@@ -18,6 +18,7 @@ namespace LTW2024.Entities
         public string Password { get; set; }
 
         [StringLength(10)]
+        [Index(IsUnique = true)]
         public string MaNV { get; set; }
         public NhanVien NhanVien { get; set; }
 

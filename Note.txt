@@ -1,1 +1,4 @@
 Nút reload nhớ dùng để load lại database
+enable-migrations
+add-migration Migrations
+update-database

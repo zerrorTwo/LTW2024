@@ -1,12 +1,139 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E38CCD39-012E-439B-92A2-6B37005CDACB}|LTW2024\\LTW2024.csproj|d:\\aaaaaaaaaaaaaaaaaa\\spkt\\ltw\\ltw2024\\ltw2024\\migrations\\202405031541232_migrations1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E38CCD39-012E-439B-92A2-6B37005CDACB}|LTW2024\\LTW2024.csproj|solutionrelative:ltw2024\\migrations\\202405031541232_migrations1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E38CCD39-012E-439B-92A2-6B37005CDACB}|LTW2024\\LTW2024.csproj|d:\\aaaaaaaaaaaaaaaaaa\\spkt\\ltw\\ltw2024\\ltw2024\\entities\\taikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E38CCD39-012E-439B-92A2-6B37005CDACB}|LTW2024\\LTW2024.csproj|solutionrelative:ltw2024\\entities\\taikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E38CCD39-012E-439B-92A2-6B37005CDACB}|LTW2024\\LTW2024.csproj|d:\\aaaaaaaaaaaaaaaaaa\\spkt\\ltw\\ltw2024\\ltw2024\\migrations\\202405031525407_migrations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E38CCD39-012E-439B-92A2-6B37005CDACB}|LTW2024\\LTW2024.csproj|solutionrelative:ltw2024\\migrations\\202405031525407_migrations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E38CCD39-012E-439B-92A2-6B37005CDACB}|LTW2024\\LTW2024.csproj|d:\\aaaaaaaaaaaaaaaaaa\\spkt\\ltw\\ltw2024\\ltw2024\\migrations\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E38CCD39-012E-439B-92A2-6B37005CDACB}|LTW2024\\LTW2024.csproj|solutionrelative:ltw2024\\migrations\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E38CCD39-012E-439B-92A2-6B37005CDACB}|LTW2024\\LTW2024.csproj|d:\\aaaaaaaaaaaaaaaaaa\\spkt\\ltw\\ltw2024\\ltw2024\\entities\\chitietphieunhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E38CCD39-012E-439B-92A2-6B37005CDACB}|LTW2024\\LTW2024.csproj|solutionrelative:ltw2024\\entities\\chitietphieunhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E38CCD39-012E-439B-92A2-6B37005CDACB}|LTW2024\\LTW2024.csproj|d:\\aaaaaaaaaaaaaaaaaa\\spkt\\ltw\\ltw2024\\ltw2024\\entities\\chitiethd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E38CCD39-012E-439B-92A2-6B37005CDACB}|LTW2024\\LTW2024.csproj|solutionrelative:ltw2024\\entities\\chitiethd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E38CCD39-012E-439B-92A2-6B37005CDACB}|LTW2024\\LTW2024.csproj|d:\\aaaaaaaaaaaaaaaaaa\\spkt\\ltw\\ltw2024\\ltw2024\\dbgrocerycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E38CCD39-012E-439B-92A2-6B37005CDACB}|LTW2024\\LTW2024.csproj|solutionrelative:ltw2024\\dbgrocerycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "202405031541232_Migrations1.cs",
+              "DocumentMoniker": "D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\LTW2024\\Migrations\\202405031541232_Migrations1.cs",
+              "RelativeDocumentMoniker": "LTW2024\\Migrations\\202405031541232_Migrations1.cs",
+              "ToolTip": "D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\LTW2024\\Migrations\\202405031541232_Migrations1.cs",
+              "RelativeToolTip": "LTW2024\\Migrations\\202405031541232_Migrations1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T15:41:37.005Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TaiKhoan.cs",
+              "DocumentMoniker": "D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\LTW2024\\Entities\\TaiKhoan.cs",
+              "RelativeDocumentMoniker": "LTW2024\\Entities\\TaiKhoan.cs",
+              "ToolTip": "D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\LTW2024\\Entities\\TaiKhoan.cs",
+              "RelativeToolTip": "LTW2024\\Entities\\TaiKhoan.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABQAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T15:37:08.13Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "202405031525407_Migrations.cs",
+              "DocumentMoniker": "D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\LTW2024\\Migrations\\202405031525407_Migrations.cs",
+              "RelativeDocumentMoniker": "LTW2024\\Migrations\\202405031525407_Migrations.cs",
+              "ToolTip": "D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\LTW2024\\Migrations\\202405031525407_Migrations.cs",
+              "RelativeToolTip": "LTW2024\\Migrations\\202405031525407_Migrations.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEIAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T15:25:56.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Configuration.cs",
+              "DocumentMoniker": "D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\LTW2024\\Migrations\\Configuration.cs",
+              "RelativeDocumentMoniker": "LTW2024\\Migrations\\Configuration.cs",
+              "ToolTip": "D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\LTW2024\\Migrations\\Configuration.cs",
+              "RelativeToolTip": "LTW2024\\Migrations\\Configuration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T15:18:05.287Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ChiTietPhieuNhap.cs",
+              "DocumentMoniker": "D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\LTW2024\\Entities\\ChiTietPhieuNhap.cs",
+              "RelativeDocumentMoniker": "LTW2024\\Entities\\ChiTietPhieuNhap.cs",
+              "ToolTip": "D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\LTW2024\\Entities\\ChiTietPhieuNhap.cs",
+              "RelativeToolTip": "LTW2024\\Entities\\ChiTietPhieuNhap.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T15:17:26.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ChiTietHD.cs",
+              "DocumentMoniker": "D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\LTW2024\\Entities\\ChiTietHD.cs",
+              "RelativeDocumentMoniker": "LTW2024\\Entities\\ChiTietHD.cs",
+              "ToolTip": "D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\LTW2024\\Entities\\ChiTietHD.cs",
+              "RelativeToolTip": "LTW2024\\Entities\\ChiTietHD.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T15:16:24.025Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DBGroceryContext.cs",
+              "DocumentMoniker": "D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\LTW2024\\DBGroceryContext.cs",
+              "RelativeDocumentMoniker": "LTW2024\\DBGroceryContext.cs",
+              "ToolTip": "D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\LTW2024\\DBGroceryContext.cs",
+              "RelativeToolTip": "LTW2024\\DBGroceryContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T15:13:15.06Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

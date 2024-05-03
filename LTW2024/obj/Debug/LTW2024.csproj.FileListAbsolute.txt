@@ -17,3 +17,9 @@ D:\aaaaaaaaaaaaaaaaaa\SPKT\LTW\LTW2024\LTW2024\obj\Debug\LTW2024.UI.StaffManagem
 D:\aaaaaaaaaaaaaaaaaa\SPKT\LTW\LTW2024\LTW2024\obj\Debug\LTW2024.UI.ProductManagement.resources
 D:\aaaaaaaaaaaaaaaaaa\SPKT\LTW\LTW2024\LTW2024\obj\Debug\LTW2024.UI.Provider.resources
 D:\aaaaaaaaaaaaaaaaaa\SPKT\LTW\LTW2024\LTW2024\obj\Debug\LTW2024.UI.ProviderDetails.resources
+D:\aaaaaaaaaaaaaaaaaa\SPKT\LTW\LTW2024\LTW2024\bin\Debug\EntityFramework.dll
+D:\aaaaaaaaaaaaaaaaaa\SPKT\LTW\LTW2024\LTW2024\bin\Debug\EntityFramework.SqlServer.dll
+D:\aaaaaaaaaaaaaaaaaa\SPKT\LTW\LTW2024\LTW2024\bin\Debug\EntityFramework.xml
+D:\aaaaaaaaaaaaaaaaaa\SPKT\LTW\LTW2024\LTW2024\bin\Debug\EntityFramework.SqlServer.xml
+D:\aaaaaaaaaaaaaaaaaa\SPKT\LTW\LTW2024\LTW2024\obj\Debug\LTW2024.Migrations.Migrations.resources
+D:\aaaaaaaaaaaaaaaaaa\SPKT\LTW\LTW2024\LTW2024\obj\Debug\LTW2024.Migrations.Migrations1.resources

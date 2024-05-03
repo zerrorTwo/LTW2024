@@ -71,6 +71,15 @@
     <Compile Include="Entities\NhanVien.cs" />
     <Compile Include="Entities\SanPham.cs" />
     <Compile Include="Entities\TaiKhoan.cs" />
+    <Compile Include="Migrations\202405031525407_Migrations.cs" />
+    <Compile Include="Migrations\202405031525407_Migrations.Designer.cs">
+      <DependentUpon>202405031525407_Migrations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202405031541232_Migrations1.cs" />
+    <Compile Include="Migrations\202405031541232_Migrations1.Designer.cs">
+      <DependentUpon>202405031541232_Migrations1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="UI\Home.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +130,12 @@
     <Compile Include="UI\StaffManagement.Designer.cs">
       <DependentUpon>StaffManagement.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Migrations\202405031525407_Migrations.resx">
+      <DependentUpon>202405031525407_Migrations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202405031541232_Migrations1.resx">
+      <DependentUpon>202405031541232_Migrations1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
