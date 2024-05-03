@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace LTW2024.UI
 {
-    public partial class Warehouse : Form
+    public partial class ProviderDetails : Form
     {
-        public Warehouse()
+        public ProviderDetails()
         {
             InitializeComponent();
+        }
+
+        private void btnUpdateProvider_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

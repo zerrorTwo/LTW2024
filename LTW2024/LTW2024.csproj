@@ -51,12 +51,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UI\Warehouse.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UI\Warehouse.Designer.cs">
-      <DependentUpon>Warehouse.cs</DependentUpon>
-    </Compile>
     <Compile Include="UI\Home.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,15 +83,24 @@
     <Compile Include="UI\ProductManagement.Designer.cs">
       <DependentUpon>ProductManagement.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\Provider.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Provider.Designer.cs">
+      <DependentUpon>Provider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ProviderDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ProviderDetails.Designer.cs">
+      <DependentUpon>ProviderDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\StaffManagement.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="UI\StaffManagement.Designer.cs">
       <DependentUpon>StaffManagement.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="UI\Warehouse.resx">
-      <DependentUpon>Warehouse.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="UI\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
@@ -119,6 +122,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ProductManagement.resx">
+      <DependentUpon>ProductManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Provider.resx">
+      <DependentUpon>Provider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ProviderDetails.resx">
+      <DependentUpon>ProviderDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\StaffManagement.resx">
       <DependentUpon>StaffManagement.cs</DependentUpon>

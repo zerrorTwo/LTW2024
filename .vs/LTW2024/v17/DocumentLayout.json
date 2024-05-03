@@ -3,24 +3,52 @@
   "WorkspaceRootPath": "D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E38CCD39-012E-439B-92A2-6B37005CDACB}|LTW2024\\LTW2024.csproj|d:\\aaaaaaaaaaaaaaaaaa\\spkt\\ltw\\ltw2024\\ltw2024\\ui\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E38CCD39-012E-439B-92A2-6B37005CDACB}|LTW2024\\LTW2024.csproj|solutionrelative:ltw2024\\ui\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{E38CCD39-012E-439B-92A2-6B37005CDACB}|LTW2024\\LTW2024.csproj|d:\\aaaaaaaaaaaaaaaaaa\\spkt\\ltw\\ltw2024\\ltw2024\\ui\\provider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E38CCD39-012E-439B-92A2-6B37005CDACB}|LTW2024\\LTW2024.csproj|solutionrelative:ltw2024\\ui\\provider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E38CCD39-012E-439B-92A2-6B37005CDACB}|LTW2024\\LTW2024.csproj|d:\\aaaaaaaaaaaaaaaaaa\\spkt\\ltw\\ltw2024\\ltw2024\\ui\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E38CCD39-012E-439B-92A2-6B37005CDACB}|LTW2024\\LTW2024.csproj|solutionrelative:ltw2024\\ui\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E38CCD39-012E-439B-92A2-6B37005CDACB}|LTW2024\\LTW2024.csproj|d:\\aaaaaaaaaaaaaaaaaa\\spkt\\ltw\\ltw2024\\ltw2024\\ui\\providerdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E38CCD39-012E-439B-92A2-6B37005CDACB}|LTW2024\\LTW2024.csproj|solutionrelative:ltw2024\\ui\\providerdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E38CCD39-012E-439B-92A2-6B37005CDACB}|LTW2024\\LTW2024.csproj|d:\\aaaaaaaaaaaaaaaaaa\\spkt\\ltw\\ltw2024\\ltw2024\\ui\\staffmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E38CCD39-012E-439B-92A2-6B37005CDACB}|LTW2024\\LTW2024.csproj|solutionrelative:ltw2024\\ui\\staffmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{E38CCD39-012E-439B-92A2-6B37005CDACB}|LTW2024\\LTW2024.csproj|d:\\aaaaaaaaaaaaaaaaaa\\spkt\\ltw\\ltw2024\\ltw2024\\ui\\provider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E38CCD39-012E-439B-92A2-6B37005CDACB}|LTW2024\\LTW2024.csproj|solutionrelative:ltw2024\\ui\\provider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E38CCD39-012E-439B-92A2-6B37005CDACB}|LTW2024\\LTW2024.csproj|D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\ltw2024\\ui\\staffmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E38CCD39-012E-439B-92A2-6B37005CDACB}|LTW2024\\LTW2024.csproj|solutionrelative:ltw2024\\ui\\staffmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E38CCD39-012E-439B-92A2-6B37005CDACB}|LTW2024\\LTW2024.csproj|d:\\aaaaaaaaaaaaaaaaaa\\spkt\\ltw\\ltw2024\\ltw2024\\ui\\providerdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E38CCD39-012E-439B-92A2-6B37005CDACB}|LTW2024\\LTW2024.csproj|solutionrelative:ltw2024\\ui\\providerdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E38CCD39-012E-439B-92A2-6B37005CDACB}|LTW2024\\LTW2024.csproj|d:\\aaaaaaaaaaaaaaaaaa\\spkt\\ltw\\ltw2024\\ltw2024\\ui\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E38CCD39-012E-439B-92A2-6B37005CDACB}|LTW2024\\LTW2024.csproj|solutionrelative:ltw2024\\ui\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E38CCD39-012E-439B-92A2-6B37005CDACB}|LTW2024\\LTW2024.csproj|d:\\aaaaaaaaaaaaaaaaaa\\spkt\\ltw\\ltw2024\\ltw2024\\ui\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E38CCD39-012E-439B-92A2-6B37005CDACB}|LTW2024\\LTW2024.csproj|solutionrelative:ltw2024\\ui\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E38CCD39-012E-439B-92A2-6B37005CDACB}|LTW2024\\LTW2024.csproj|d:\\aaaaaaaaaaaaaaaaaa\\spkt\\ltw\\ltw2024\\ltw2024\\ui\\productmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E38CCD39-012E-439B-92A2-6B37005CDACB}|LTW2024\\LTW2024.csproj|solutionrelative:ltw2024\\ui\\productmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E38CCD39-012E-439B-92A2-6B37005CDACB}|LTW2024\\LTW2024.csproj|D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\ltw2024\\ui\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E38CCD39-012E-439B-92A2-6B37005CDACB}|LTW2024\\LTW2024.csproj|solutionrelative:ltw2024\\ui\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E38CCD39-012E-439B-92A2-6B37005CDACB}|LTW2024\\LTW2024.csproj|D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\ltw2024\\ui\\staffmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E38CCD39-012E-439B-92A2-6B37005CDACB}|LTW2024\\LTW2024.csproj|solutionrelative:ltw2024\\ui\\staffmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E38CCD39-012E-439B-92A2-6B37005CDACB}|LTW2024\\LTW2024.csproj|d:\\aaaaaaaaaaaaaaaaaa\\spkt\\ltw\\ltw2024\\ltw2024\\ui\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E38CCD39-012E-439B-92A2-6B37005CDACB}|LTW2024\\LTW2024.csproj|solutionrelative:ltw2024\\ui\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E38CCD39-012E-439B-92A2-6B37005CDACB}|LTW2024\\LTW2024.csproj|D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\ltw2024\\ui\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E38CCD39-012E-439B-92A2-6B37005CDACB}|LTW2024\\LTW2024.csproj|solutionrelative:ltw2024\\ui\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E38CCD39-012E-439B-92A2-6B37005CDACB}|LTW2024\\LTW2024.csproj|D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\ltw2024\\ui\\staffmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E38CCD39-012E-439B-92A2-6B37005CDACB}|LTW2024\\LTW2024.csproj|solutionrelative:ltw2024\\ui\\staffmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,24 +58,98 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Menu.cs",
-              "DocumentMoniker": "D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\LTW2024\\UI\\Menu.cs",
-              "RelativeDocumentMoniker": "LTW2024\\UI\\Menu.cs",
-              "ToolTip": "D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\LTW2024\\UI\\Menu.cs",
-              "RelativeToolTip": "LTW2024\\UI\\Menu.cs",
-              "ViewState": "AQIAADYAAAAAAAAAAAAgwEMAAAAMAAAA",
+              "DocumentIndex": 4,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\LTW2024\\UI\\MainForm.cs",
+              "RelativeDocumentMoniker": "LTW2024\\UI\\MainForm.cs",
+              "ToolTip": "D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\LTW2024\\UI\\MainForm.cs",
+              "RelativeToolTip": "LTW2024\\UI\\MainForm.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAASwDoAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T06:54:25.921Z",
+              "WhenOpened": "2024-05-03T01:12:54.328Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProviderDetails.cs",
+              "DocumentMoniker": "D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\LTW2024\\UI\\ProviderDetails.cs",
+              "RelativeDocumentMoniker": "LTW2024\\UI\\ProviderDetails.cs",
+              "ToolTip": "D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\LTW2024\\UI\\ProviderDetails.cs",
+              "RelativeToolTip": "LTW2024\\UI\\ProviderDetails.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAtwBUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T01:11:57.779Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProviderDetails.cs [Design]",
+              "DocumentMoniker": "D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\LTW2024\\UI\\ProviderDetails.cs",
+              "RelativeDocumentMoniker": "LTW2024\\UI\\ProviderDetails.cs",
+              "ToolTip": "D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\LTW2024\\UI\\ProviderDetails.cs [Design]",
+              "RelativeToolTip": "LTW2024\\UI\\ProviderDetails.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T01:07:41.908Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Provider.cs",
+              "DocumentMoniker": "D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\LTW2024\\UI\\Provider.cs",
+              "RelativeDocumentMoniker": "LTW2024\\UI\\Provider.cs",
+              "ToolTip": "D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\LTW2024\\UI\\Provider.cs",
+              "RelativeToolTip": "LTW2024\\UI\\Provider.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAhwBsAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T01:03:05.184Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Provider.cs [Design]",
+              "DocumentMoniker": "D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\LTW2024\\UI\\Provider.cs",
+              "RelativeDocumentMoniker": "LTW2024\\UI\\Provider.cs",
+              "ToolTip": "D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\LTW2024\\UI\\Provider.cs [Design]",
+              "RelativeToolTip": "LTW2024\\UI\\Provider.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T00:58:34.016Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainForm.cs [Design]",
+              "DocumentMoniker": "D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\LTW2024\\UI\\MainForm.cs",
+              "RelativeDocumentMoniker": "LTW2024\\UI\\MainForm.cs",
+              "ToolTip": "D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\LTW2024\\UI\\MainForm.cs [Design]",
+              "RelativeToolTip": "LTW2024\\UI\\MainForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T00:49:32.041Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProductManagement.cs [Design]",
+              "DocumentMoniker": "D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\LTW2024\\UI\\ProductManagement.cs",
+              "RelativeDocumentMoniker": "LTW2024\\UI\\ProductManagement.cs",
+              "ToolTip": "D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\LTW2024\\UI\\ProductManagement.cs [Design]",
+              "RelativeToolTip": "LTW2024\\UI\\ProductManagement.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T00:49:04.634Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "Menu.cs [Design]",
               "DocumentMoniker": "D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\LTW2024\\UI\\Menu.cs",
               "RelativeDocumentMoniker": "LTW2024\\UI\\Menu.cs",
@@ -59,18 +161,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "Home.cs [Design]",
               "DocumentMoniker": "D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\LTW2024\\UI\\Home.cs",
               "RelativeDocumentMoniker": "LTW2024\\UI\\Home.cs",
               "ToolTip": "D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\LTW2024\\UI\\Home.cs [Design]",
               "RelativeToolTip": "LTW2024\\UI\\Home.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T16:08:25.575Z"
+              "WhenOpened": "2024-04-30T16:08:25.575Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
+              "Title": "StaffManagement.cs [Design]",
+              "DocumentMoniker": "D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\LTW2024\\UI\\StaffManagement.cs",
+              "RelativeDocumentMoniker": "LTW2024\\UI\\StaffManagement.cs",
+              "ToolTip": "D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\LTW2024\\UI\\StaffManagement.cs [Design]",
+              "RelativeToolTip": "LTW2024\\UI\\StaffManagement.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T15:34:44.654Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "StaffManagement.cs",
               "DocumentMoniker": "D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\LTW2024\\UI\\StaffManagement.cs",
               "RelativeDocumentMoniker": "LTW2024\\UI\\StaffManagement.cs",
@@ -83,15 +198,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "StaffManagement.cs [Design]",
-              "DocumentMoniker": "D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\LTW2024\\UI\\StaffManagement.cs",
-              "RelativeDocumentMoniker": "LTW2024\\UI\\StaffManagement.cs",
-              "ToolTip": "D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\LTW2024\\UI\\StaffManagement.cs [Design]",
-              "RelativeToolTip": "LTW2024\\UI\\StaffManagement.cs [Design]",
+              "DocumentIndex": 10,
+              "Title": "Menu.cs",
+              "DocumentMoniker": "D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\LTW2024\\UI\\Menu.cs",
+              "RelativeDocumentMoniker": "LTW2024\\UI\\Menu.cs",
+              "ToolTip": "D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\LTW2024\\UI\\Menu.cs",
+              "RelativeToolTip": "LTW2024\\UI\\Menu.cs",
+              "ViewState": "AQIAADYAAAAAAAAAAAAgwEMAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T15:34:44.654Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-01T06:54:25.921Z",
+              "EditorCaption": ""
             }
           ]
         }

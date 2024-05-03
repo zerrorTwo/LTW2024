@@ -12,6 +12,8 @@ D:\aaaaaaaaaaaaaaaaaa\SPKT\LTW\LTW2024\LTW2024\obj\Debug\LTW2024.pdb
 D:\aaaaaaaaaaaaaaaaaa\SPKT\LTW\LTW2024\LTW2024\obj\Debug\LTW2024.Login.resources
 D:\aaaaaaaaaaaaaaaaaa\SPKT\LTW\LTW2024\LTW2024\obj\Debug\LTW2024.UI.MainForm.resources
 D:\aaaaaaaaaaaaaaaaaa\SPKT\LTW\LTW2024\LTW2024\obj\Debug\LTW2024.UI.Home.resources
-D:\aaaaaaaaaaaaaaaaaa\SPKT\LTW\LTW2024\LTW2024\obj\Debug\LTW2024.UI.Warehouse.resources
 D:\aaaaaaaaaaaaaaaaaa\SPKT\LTW\LTW2024\LTW2024\obj\Debug\LTW2024.UI.Menu.resources
 D:\aaaaaaaaaaaaaaaaaa\SPKT\LTW\LTW2024\LTW2024\obj\Debug\LTW2024.UI.StaffManagement.resources
+D:\aaaaaaaaaaaaaaaaaa\SPKT\LTW\LTW2024\LTW2024\obj\Debug\LTW2024.UI.ProductManagement.resources
+D:\aaaaaaaaaaaaaaaaaa\SPKT\LTW\LTW2024\LTW2024\obj\Debug\LTW2024.UI.Provider.resources
+D:\aaaaaaaaaaaaaaaaaa\SPKT\LTW\LTW2024\LTW2024\obj\Debug\LTW2024.UI.ProviderDetails.resources
