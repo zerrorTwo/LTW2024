@@ -29,34 +29,33 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.tbSearch = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.gwProduct = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.gwProduct = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.tbSearch = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.gwSellProduct = new System.Windows.Forms.DataGridView();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.tbNameCus = new System.Windows.Forms.TextBox();
-            this.tbNumberCus = new System.Windows.Forms.TextBox();
-            this.tbQty = new System.Windows.Forms.TextBox();
-            this.lbMoneyPay = new System.Windows.Forms.Label();
             this.btnCancle = new Guna.UI2.WinForms.Guna2Button();
             this.btnPay = new Guna.UI2.WinForms.Guna2Button();
             this.btnDown = new Guna.UI2.WinForms.Guna2Button();
             this.btnUp = new Guna.UI2.WinForms.Guna2Button();
-            this.btnSearch = new Guna.UI2.WinForms.Guna2Button();
+            this.lbMoneyPay = new System.Windows.Forms.Label();
+            this.tbQty = new System.Windows.Forms.TextBox();
+            this.tbNumberCus = new System.Windows.Forms.TextBox();
+            this.tbNameCus = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.gwSellProduct = new System.Windows.Forms.DataGridView();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.btnDeletePro = new Guna.UI2.WinForms.Guna2Button();
             this.panel1.SuspendLayout();
-            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gwProduct)).BeginInit();
+            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gwSellProduct)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.btnSearch);
             this.panel1.Controls.Add(this.tbSearch);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.gwProduct);
@@ -66,6 +65,40 @@
             this.panel1.Size = new System.Drawing.Size(807, 664);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // tbSearch
+            // 
+            this.tbSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbSearch.Location = new System.Drawing.Point(130, 21);
+            this.tbSearch.Name = "tbSearch";
+            this.tbSearch.Size = new System.Drawing.Size(227, 30);
+            this.tbSearch.TabIndex = 2;
+            this.tbSearch.TextChanged += new System.EventHandler(this.tbSearch_TextChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(12, 26);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(91, 25);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Tìm kiếm";
+            // 
+            // gwProduct
+            // 
+            this.gwProduct.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.gwProduct.BackgroundColor = System.Drawing.Color.White;
+            this.gwProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gwProduct.Location = new System.Drawing.Point(3, 115);
+            this.gwProduct.Name = "gwProduct";
+            this.gwProduct.RowHeadersWidth = 51;
+            this.gwProduct.RowTemplate.Height = 24;
+            this.gwProduct.Size = new System.Drawing.Size(802, 546);
+            this.gwProduct.TabIndex = 0;
+            this.gwProduct.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gwProduct_CellClick);
+            this.gwProduct.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gwProduct_CellContentClick);
+            this.gwProduct.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.gwProduct_CellValueChanged);
             // 
             // panel2
             // 
@@ -79,6 +112,7 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.btnDeletePro);
             this.panel3.Controls.Add(this.btnCancle);
             this.panel3.Controls.Add(this.btnPay);
             this.panel3.Controls.Add(this.btnDown);
@@ -98,123 +132,6 @@
             this.panel3.Size = new System.Drawing.Size(470, 664);
             this.panel3.TabIndex = 2;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
-            // 
-            // gwProduct
-            // 
-            this.gwProduct.BackgroundColor = System.Drawing.Color.White;
-            this.gwProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gwProduct.Location = new System.Drawing.Point(3, 115);
-            this.gwProduct.Name = "gwProduct";
-            this.gwProduct.RowHeadersWidth = 51;
-            this.gwProduct.RowTemplate.Height = 24;
-            this.gwProduct.Size = new System.Drawing.Size(802, 546);
-            this.gwProduct.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 26);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(91, 25);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Tìm kiếm";
-            // 
-            // tbSearch
-            // 
-            this.tbSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbSearch.Location = new System.Drawing.Point(130, 21);
-            this.tbSearch.Name = "tbSearch";
-            this.tbSearch.Size = new System.Drawing.Size(227, 30);
-            this.tbSearch.TabIndex = 2;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(28, 24);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(86, 25);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Tên KH:";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(30, 74);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(59, 25);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "SĐT:";
-            // 
-            // gwSellProduct
-            // 
-            this.gwSellProduct.BackgroundColor = System.Drawing.Color.White;
-            this.gwSellProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gwSellProduct.Location = new System.Drawing.Point(19, 133);
-            this.gwSellProduct.Name = "gwSellProduct";
-            this.gwSellProduct.RowHeadersWidth = 51;
-            this.gwSellProduct.RowTemplate.Height = 24;
-            this.gwSellProduct.Size = new System.Drawing.Size(428, 293);
-            this.gwSellProduct.TabIndex = 3;
-            this.gwSellProduct.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gwSellProduct_CellContentClick);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(30, 461);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(96, 25);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Số lượng:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(30, 532);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(111, 25);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Thành tiền:";
-            // 
-            // tbNameCus
-            // 
-            this.tbNameCus.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbNameCus.Location = new System.Drawing.Point(131, 21);
-            this.tbNameCus.Name = "tbNameCus";
-            this.tbNameCus.Size = new System.Drawing.Size(220, 30);
-            this.tbNameCus.TabIndex = 7;
-            // 
-            // tbNumberCus
-            // 
-            this.tbNumberCus.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbNumberCus.Location = new System.Drawing.Point(131, 71);
-            this.tbNumberCus.Name = "tbNumberCus";
-            this.tbNumberCus.Size = new System.Drawing.Size(201, 30);
-            this.tbNumberCus.TabIndex = 8;
-            // 
-            // tbQty
-            // 
-            this.tbQty.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbQty.Location = new System.Drawing.Point(150, 458);
-            this.tbQty.Name = "tbQty";
-            this.tbQty.Size = new System.Drawing.Size(80, 30);
-            this.tbQty.TabIndex = 9;
-            this.tbQty.Text = "0";
-            // 
-            // lbMoneyPay
-            // 
-            this.lbMoneyPay.AutoSize = true;
-            this.lbMoneyPay.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMoneyPay.Location = new System.Drawing.Point(252, 525);
-            this.lbMoneyPay.Name = "lbMoneyPay";
-            this.lbMoneyPay.Size = new System.Drawing.Size(192, 32);
-            this.lbMoneyPay.TabIndex = 10;
-            this.lbMoneyPay.Text = "999999999 đ";
             // 
             // btnCancle
             // 
@@ -292,21 +209,120 @@
             this.btnUp.TabIndex = 11;
             this.btnUp.Click += new System.EventHandler(this.btnUp_Click);
             // 
-            // btnSearch
+            // lbMoneyPay
             // 
-            this.btnSearch.CheckedState.Parent = this.btnSearch;
-            this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSearch.CustomImages.Parent = this.btnSearch;
-            this.btnSearch.FillColor = System.Drawing.Color.Transparent;
-            this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnSearch.ForeColor = System.Drawing.Color.White;
-            this.btnSearch.HoverState.Parent = this.btnSearch;
-            this.btnSearch.Image = global::LTW2024.Properties.Resources.magnifying_glass;
-            this.btnSearch.Location = new System.Drawing.Point(363, 19);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.ShadowDecoration.Parent = this.btnSearch;
-            this.btnSearch.Size = new System.Drawing.Size(61, 32);
-            this.btnSearch.TabIndex = 3;
+            this.lbMoneyPay.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMoneyPay.Location = new System.Drawing.Point(255, 525);
+            this.lbMoneyPay.Name = "lbMoneyPay";
+            this.lbMoneyPay.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lbMoneyPay.Size = new System.Drawing.Size(192, 32);
+            this.lbMoneyPay.TabIndex = 10;
+            this.lbMoneyPay.Text = "0 đ";
+            this.lbMoneyPay.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // tbQty
+            // 
+            this.tbQty.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbQty.Location = new System.Drawing.Point(150, 458);
+            this.tbQty.Name = "tbQty";
+            this.tbQty.Size = new System.Drawing.Size(80, 30);
+            this.tbQty.TabIndex = 9;
+            this.tbQty.Text = "0";
+            this.tbQty.TextChanged += new System.EventHandler(this.tbQty_TextChanged);
+            // 
+            // tbNumberCus
+            // 
+            this.tbNumberCus.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbNumberCus.Location = new System.Drawing.Point(131, 71);
+            this.tbNumberCus.Name = "tbNumberCus";
+            this.tbNumberCus.Size = new System.Drawing.Size(201, 30);
+            this.tbNumberCus.TabIndex = 8;
+            // 
+            // tbNameCus
+            // 
+            this.tbNameCus.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbNameCus.Location = new System.Drawing.Point(131, 21);
+            this.tbNameCus.Name = "tbNameCus";
+            this.tbNameCus.Size = new System.Drawing.Size(220, 30);
+            this.tbNameCus.TabIndex = 7;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(30, 532);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(111, 25);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "Thành tiền:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(30, 461);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(96, 25);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Số lượng:";
+            // 
+            // gwSellProduct
+            // 
+            this.gwSellProduct.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.gwSellProduct.BackgroundColor = System.Drawing.Color.White;
+            this.gwSellProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gwSellProduct.Location = new System.Drawing.Point(19, 133);
+            this.gwSellProduct.Name = "gwSellProduct";
+            this.gwSellProduct.RowHeadersWidth = 51;
+            this.gwSellProduct.RowTemplate.Height = 24;
+            this.gwSellProduct.Size = new System.Drawing.Size(428, 293);
+            this.gwSellProduct.TabIndex = 3;
+            this.gwSellProduct.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gwSellProduct_CellClick);
+            this.gwSellProduct.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gwSellProduct_CellContentClick);
+            this.gwSellProduct.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.gwSellProduct_CellValueChanged);
+            this.gwSellProduct.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.gwSellProduct_RowsAdded);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(30, 74);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(59, 25);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "SĐT:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(28, 24);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(86, 25);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Tên KH:";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // btnDeletePro
+            // 
+            this.btnDeletePro.BorderRadius = 15;
+            this.btnDeletePro.CheckedState.Parent = this.btnDeletePro;
+            this.btnDeletePro.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDeletePro.CustomImages.Parent = this.btnDeletePro;
+            this.btnDeletePro.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnDeletePro.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeletePro.ForeColor = System.Drawing.Color.White;
+            this.btnDeletePro.HoverState.Parent = this.btnDeletePro;
+            this.btnDeletePro.Image = global::LTW2024.Properties.Resources.remove;
+            this.btnDeletePro.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnDeletePro.ImageSize = new System.Drawing.Size(25, 25);
+            this.btnDeletePro.Location = new System.Drawing.Point(299, 457);
+            this.btnDeletePro.Name = "btnDeletePro";
+            this.btnDeletePro.ShadowDecoration.Parent = this.btnDeletePro;
+            this.btnDeletePro.Size = new System.Drawing.Size(145, 43);
+            this.btnDeletePro.TabIndex = 15;
+            this.btnDeletePro.Text = "   Xóa";
+            this.btnDeletePro.Click += new System.EventHandler(this.btnDeletePro_Click);
             // 
             // Menu
             // 
@@ -321,11 +337,12 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Menu";
             this.Text = "Menu";
+            this.Load += new System.EventHandler(this.Menu_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gwProduct)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gwProduct)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gwSellProduct)).EndInit();
             this.ResumeLayout(false);
 
@@ -336,7 +353,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
-        private Guna.UI2.WinForms.Guna2Button btnSearch;
         private System.Windows.Forms.TextBox tbSearch;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView gwProduct;
@@ -353,5 +369,6 @@
         private Guna.UI2.WinForms.Guna2Button btnDown;
         private Guna.UI2.WinForms.Guna2Button btnPay;
         private Guna.UI2.WinForms.Guna2Button btnCancle;
+        private Guna.UI2.WinForms.Guna2Button btnDeletePro;
     }
 }
