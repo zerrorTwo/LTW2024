@@ -34,6 +34,7 @@
             this.gwProduct = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btnDeletePro = new Guna.UI2.WinForms.Guna2Button();
             this.btnCancle = new Guna.UI2.WinForms.Guna2Button();
             this.btnPay = new Guna.UI2.WinForms.Guna2Button();
             this.btnDown = new Guna.UI2.WinForms.Guna2Button();
@@ -47,7 +48,6 @@
             this.gwSellProduct = new System.Windows.Forms.DataGridView();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnDeletePro = new Guna.UI2.WinForms.Guna2Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gwProduct)).BeginInit();
             this.panel3.SuspendLayout();
@@ -132,6 +132,27 @@
             this.panel3.Size = new System.Drawing.Size(470, 664);
             this.panel3.TabIndex = 2;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            // 
+            // btnDeletePro
+            // 
+            this.btnDeletePro.BorderRadius = 15;
+            this.btnDeletePro.CheckedState.Parent = this.btnDeletePro;
+            this.btnDeletePro.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDeletePro.CustomImages.Parent = this.btnDeletePro;
+            this.btnDeletePro.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnDeletePro.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeletePro.ForeColor = System.Drawing.Color.White;
+            this.btnDeletePro.HoverState.Parent = this.btnDeletePro;
+            this.btnDeletePro.Image = global::LTW2024.Properties.Resources.remove;
+            this.btnDeletePro.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnDeletePro.ImageSize = new System.Drawing.Size(25, 25);
+            this.btnDeletePro.Location = new System.Drawing.Point(299, 457);
+            this.btnDeletePro.Name = "btnDeletePro";
+            this.btnDeletePro.ShadowDecoration.Parent = this.btnDeletePro;
+            this.btnDeletePro.Size = new System.Drawing.Size(145, 43);
+            this.btnDeletePro.TabIndex = 15;
+            this.btnDeletePro.Text = "   Xóa";
+            this.btnDeletePro.Click += new System.EventHandler(this.btnDeletePro_Click);
             // 
             // btnCancle
             // 
@@ -281,6 +302,7 @@
             this.gwSellProduct.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gwSellProduct_CellContentClick);
             this.gwSellProduct.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.gwSellProduct_CellValueChanged);
             this.gwSellProduct.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.gwSellProduct_RowsAdded);
+            this.gwSellProduct.SelectionChanged += new System.EventHandler(this.gwSellProduct_SelectionChanged);
             // 
             // label4
             // 
@@ -302,27 +324,6 @@
             this.label3.TabIndex = 1;
             this.label3.Text = "Tên KH:";
             this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // btnDeletePro
-            // 
-            this.btnDeletePro.BorderRadius = 15;
-            this.btnDeletePro.CheckedState.Parent = this.btnDeletePro;
-            this.btnDeletePro.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDeletePro.CustomImages.Parent = this.btnDeletePro;
-            this.btnDeletePro.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btnDeletePro.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeletePro.ForeColor = System.Drawing.Color.White;
-            this.btnDeletePro.HoverState.Parent = this.btnDeletePro;
-            this.btnDeletePro.Image = global::LTW2024.Properties.Resources.remove;
-            this.btnDeletePro.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnDeletePro.ImageSize = new System.Drawing.Size(25, 25);
-            this.btnDeletePro.Location = new System.Drawing.Point(299, 457);
-            this.btnDeletePro.Name = "btnDeletePro";
-            this.btnDeletePro.ShadowDecoration.Parent = this.btnDeletePro;
-            this.btnDeletePro.Size = new System.Drawing.Size(145, 43);
-            this.btnDeletePro.TabIndex = 15;
-            this.btnDeletePro.Text = "   Xóa";
-            this.btnDeletePro.Click += new System.EventHandler(this.btnDeletePro_Click);
             // 
             // Menu
             // 

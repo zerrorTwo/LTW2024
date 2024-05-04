@@ -74,12 +74,17 @@ namespace LTW2024.UI
 
         private void btnPay_Click(object sender, EventArgs e)
         {
+            using (var context =  new DBGroceryContext())
+            {
 
+            }
         }
 
         private void btnCancle_Click(object sender, EventArgs e)
         {
-
+            gwSellProduct.Rows.Clear();
+            tbQty.Text = "0";
+            UpdateTotalMoney();
         }
 
         private void Menu_Load(object sender, EventArgs e)
@@ -129,7 +134,7 @@ namespace LTW2024.UI
                 {
                     // Kiểm tra xem các giá trị không phải null trước khi sử dụng ToString()
                     if (row.Cells["MaSP"].Value != null && selectedRow.Cells["MaSP"].Value != null &&
-                        row.Cells["MaSP"].Value.ToString() == selectedRow.Cells["MaSP"].Value.ToString())
+                        row.Cells[0].Value.ToString().Contains(selectedRow.Cells[0].Value.ToString()))
                     {
                         // Nếu dữ liệu đã tồn tại, tăng giá trị của cột "Số lượng" lên 1 và thoát khỏi vòng lặp
                         int quantity = Convert.ToInt32(row.Cells["SoLuong"].Value);
@@ -155,18 +160,18 @@ namespace LTW2024.UI
 
         private void tbQty_TextChanged(object sender, EventArgs e)
         {
-            // Kiểm tra xem tbQty có rỗng hay không
+            /*// Kiểm tra xem tbQty có rỗng hay không
             if (!string.IsNullOrEmpty(tbQty.Text))
             {
                 int newQuantity = int.Parse(tbQty.Text);
                 if (newQuantity >= 0)
                 {
                     // Lấy chỉ số hàng đang được chọn trong gwSellProduct (nếu có)
-                    int selectedRowIndex = gwSellProduct.CurrentCell?.RowIndex ?? -1;
+                    int selectedRowIndex = gwSellProduct.CurrentRow.Index;
                     if (selectedRowIndex >= 0)
                     {
                         // Cập nhật giá trị của cột "SoLuong" trong hàng đang được chọn
-                        gwSellProduct.Rows[selectedRowIndex].Cells["SoLuong"].Value = newQuantity;
+                        //gwSellProduct.Rows[selectedRowIndex].Cells["SoLuong"].Value = newQuantity;
 
                         // Nếu giá trị số lượng là 0, xóa hàng đó ra khỏi gwSellProduct
                         if (newQuantity == 0)
@@ -174,6 +179,18 @@ namespace LTW2024.UI
                             gwSellProduct.Rows.RemoveAt(selectedRowIndex);
                         }
                     }
+                }
+            }*/
+            if (gwSellProduct.SelectedRows.Count > 0)
+            {
+                // Lấy chỉ số hàng đầu tiên được chọn
+                int selectedRowIndex = gwSellProduct.SelectedRows[0].Index;
+
+                // Kiểm tra xem chỉ số hàng hợp lệ và giá trị trong tbQty có chứa trong cột "SoLuong" không
+                if (selectedRowIndex >= 0 && gwSellProduct.Rows[selectedRowIndex].Cells["SoLuong"].Value.ToString() != tbQty.Text)
+                {
+                    // Cập nhật giá trị của cột "SoLuong" trong hàng được chọn
+                    gwSellProduct.Rows[selectedRowIndex].Cells["SoLuong"].Value = tbQty.Text;
                 }
             }
             UpdateTotalMoney();
@@ -185,13 +202,27 @@ namespace LTW2024.UI
 
         private void btnDeletePro_Click(object sender, EventArgs e)
         {
-            // Lấy chỉ số hàng đang được chọn trong gwSellProduct(nếu có)
-            int selectedRowIndex = gwSellProduct.CurrentCell?.RowIndex ?? -1;
-            if (selectedRowIndex >= 0)
+            if (gwProduct.Rows.Count > 0)
             {
-                // Xóa hàng đang chọn ra khỏi gwSellProduct
-                gwSellProduct.Rows.RemoveAt(selectedRowIndex);
-                UpdateTotalMoney();
+                // Lấy chỉ số hàng đang được chọn trong gwSellProduct(nếu có)
+                int selectedRowIndex = gwSellProduct.CurrentCell?.RowIndex ?? -1;
+                if (selectedRowIndex >= 0)
+                {
+                    // Kiểm tra xem hàng đang chọn có phải là hàng mới không
+                    if (!gwSellProduct.Rows[selectedRowIndex].IsNewRow)
+                    {
+                        // Nếu không phải là hàng mới, thực hiện việc xóa
+                        gwSellProduct.Rows.RemoveAt(selectedRowIndex);
+                        UpdateTotalMoney();
+                    }
+                    else
+                    {
+                        // Nếu là hàng mới, bạn có thể xử lý hoặc bỏ qua tùy theo yêu cầu của ứng dụng
+                        // Ví dụ:
+                        MessageBox.Show("Thêm tối thiểu 1 sản phẩm!");
+                    }
+                }
+
             }
         }
 
@@ -223,9 +254,23 @@ namespace LTW2024.UI
                 if (row.Cells[2].Value != null && row.Cells[3].Value != null)
                 {
                     double price = Convert.ToDouble(row.Cells[2].Value);
-                    int quantity = Convert.ToInt32(row.Cells[3].Value);
+          
+                    if (row.Cells[3].Value != null)
+                    {
+                        // Kiểm tra xem giá trị của ô có phải là một số nguyên hợp lệ hay không
+                        if (int.TryParse(row.Cells[3].Value.ToString(), out int quantity))
+                        {
+                            quantity = Convert.ToInt32(row.Cells[3].Value);
+                            totalMoney += price * quantity;
+                        }
+                        else
+                        {
+                            quantity = Convert.ToInt32(1);
+                            totalMoney += price * quantity;
+                        }
+                    }
                     // Tính tổng tiền
-                    totalMoney += price * quantity;
+                    
                 }
             }
             lbMoneyPay.Text = totalMoney.ToString() + " đ";
@@ -260,5 +305,34 @@ namespace LTW2024.UI
             }
         }
 
+        private void gwSellProduct_SelectionChanged(object sender, EventArgs e)
+        {
+            if (gwSellProduct.SelectedRows.Count > 0)
+            {
+                // Kiểm tra và thực hiện hành động tương ứng
+                if (gwSellProduct.SelectedRows.Count > 0)
+                {
+                    // Lấy chỉ số hàng đầu tiên được chọn
+                    int selectedRowIndex = gwSellProduct.SelectedRows[0].Index;
+
+                    // Kiểm tra và thực hiện hành động tương ứng
+                    if (selectedRowIndex >= 0)
+                    {
+                        // Kiểm tra xem ô "SoLuong" của hàng đó có giá trị không
+                        DataGridViewCell cell = gwSellProduct.Rows[selectedRowIndex].Cells["SoLuong"];
+                        if (cell.Value != null)
+                        {
+                            tbQty.Text = cell.Value.ToString();
+                        }
+                        else
+                        {
+                            // Xử lý trường hợp giá trị là null (nếu cần)
+                        }
+                    }
+                }
+
+
+            }
+        }
     }
 }

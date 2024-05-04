@@ -277,8 +277,8 @@ namespace LTW2024.UI
                         MaNV = newMaNV,
                         Role = cbRole.SelectedItem.ToString(),
                     };
-                    context.NhanViens.AddOrUpdate(nhanVien);
-                    context.TaiKhoans.AddOrUpdate(taiKhoan);
+                    context.NhanViens.Add(nhanVien);
+                    context.TaiKhoans.Add(taiKhoan);
                     context.SaveChanges();
                     MessageBox.Show("Thêm thông tin thành công!!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }

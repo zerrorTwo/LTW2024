@@ -61,6 +61,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DBCurrentLogin.cs" />
     <Compile Include="DBGroceryContext.cs" />
     <Compile Include="Entities\ChiTietHD.cs" />
     <Compile Include="Entities\ChiTietPhieuNhap.cs" />

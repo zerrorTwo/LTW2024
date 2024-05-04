@@ -36,7 +36,14 @@ namespace LTW2024.UI
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-
+            using (var context = new DBGroceryContext())
+            {
+                string ma = DBCurrentLogin.GetCurrentLoginInfo().MaNV;
+                var nhanVien = context.NhanViens
+                    .Select(nv => new {nv.MaNV, nv.HoNV, nv.TenNV})
+                    .Where(p => p.MaNV.Contains(ma)).FirstOrDefault();
+                    lbName.Text = nhanVien.HoNV + " " + nhanVien.TenNV;
+            }
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -94,6 +101,10 @@ namespace LTW2024.UI
         private void timer1_Tick(object sender, EventArgs e)
         {
             lbTime.Text = DateTime.Now.ToString();
+        }
+        protected override void OnClosing(CancelEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

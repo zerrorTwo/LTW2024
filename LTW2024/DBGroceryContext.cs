@@ -15,6 +15,10 @@ namespace LTW2024
         {
 
         }
+        public DBGroceryContext(string userName, string passWord) : base($@"Server=(local);Database=QuanlyTapHoa;User Id={userName};Password={passWord};")
+        {
+
+        }
 
         public DbSet<KhachHang> KhachHangs { get; set; }
         public DbSet<NhanVien> NhanViens { get; set; }

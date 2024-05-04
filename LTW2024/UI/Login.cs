@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LTW2024.UI;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -41,6 +42,45 @@ namespace LTW2024
         }
         private void Login_Load(object sender, EventArgs e)
         {
+
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                
+                string userName = tbUsername.Text;
+                string password = tbPassword.Text;
+                using (var context = new DBGroceryContext())
+                {
+                    var tk = context.TaiKhoans
+                        .Select(t => new { t.UserName, t.Password, t.Role, t.MaNV })
+                        .Where(n => n.UserName.Contains(userName) && n.Password.Contains(password))
+                        .FirstOrDefault(); // Lấy một bản ghi đầu tiên nếu có
+
+                    if (tk != null)
+                    {
+                        DBCurrentLogin.GetCurrentLoginInfo().UserName = userName;
+                        DBCurrentLogin.GetCurrentLoginInfo().Password = password;
+                        DBCurrentLogin.GetCurrentLoginInfo().Role = tk.Role;
+                        DBCurrentLogin.GetCurrentLoginInfo().MaNV = tk.MaNV;
+                        MainForm mainMenu = new MainForm();
+                        this.Hide();
+                        // Chuyển các giá trị userName, password, và role sang MainMenu
+                        mainMenu.Show();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Tên người dùng hoặc mật khẩu không đúng!", "Đăng nhập thất bại", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Tải dữ liệu không thành công!!!", "Thất bại", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
 
         }
     }
