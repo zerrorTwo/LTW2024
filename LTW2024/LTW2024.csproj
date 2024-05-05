@@ -80,6 +80,10 @@
     <Compile Include="Migrations\202405031541232_Migrations1.Designer.cs">
       <DependentUpon>202405031541232_Migrations1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202405050833456_Migrations2.cs" />
+    <Compile Include="Migrations\202405050833456_Migrations2.Designer.cs">
+      <DependentUpon>202405050833456_Migrations2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="UI\Home.cs">
       <SubType>Form</SubType>
@@ -136,6 +140,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202405031541232_Migrations1.resx">
       <DependentUpon>202405031541232_Migrations1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202405050833456_Migrations2.resx">
+      <DependentUpon>202405050833456_Migrations2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>

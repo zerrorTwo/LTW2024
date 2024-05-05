@@ -3,24 +3,36 @@
   "WorkspaceRootPath": "D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E38CCD39-012E-439B-92A2-6B37005CDACB}|LTW2024\\LTW2024.csproj|d:\\aaaaaaaaaaaaaaaaaa\\spkt\\ltw\\ltw2024\\ltw2024\\ui\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E38CCD39-012E-439B-92A2-6B37005CDACB}|LTW2024\\LTW2024.csproj|solutionrelative:ltw2024\\ui\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E38CCD39-012E-439B-92A2-6B37005CDACB}|LTW2024\\LTW2024.csproj|D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\ltw2024\\ui\\staffmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E38CCD39-012E-439B-92A2-6B37005CDACB}|LTW2024\\LTW2024.csproj|solutionrelative:ltw2024\\ui\\staffmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E38CCD39-012E-439B-92A2-6B37005CDACB}|LTW2024\\LTW2024.csproj|D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\ltw2024\\ui\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E38CCD39-012E-439B-92A2-6B37005CDACB}|LTW2024\\LTW2024.csproj|solutionrelative:ltw2024\\ui\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E38CCD39-012E-439B-92A2-6B37005CDACB}|LTW2024\\LTW2024.csproj|D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\ltw2024\\ui\\productmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E38CCD39-012E-439B-92A2-6B37005CDACB}|LTW2024\\LTW2024.csproj|solutionrelative:ltw2024\\ui\\productmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E38CCD39-012E-439B-92A2-6B37005CDACB}|LTW2024\\LTW2024.csproj|D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\ltw2024\\ui\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E38CCD39-012E-439B-92A2-6B37005CDACB}|LTW2024\\LTW2024.csproj|solutionrelative:ltw2024\\ui\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E38CCD39-012E-439B-92A2-6B37005CDACB}|LTW2024\\LTW2024.csproj|d:\\aaaaaaaaaaaaaaaaaa\\spkt\\ltw\\ltw2024\\ltw2024\\ui\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E38CCD39-012E-439B-92A2-6B37005CDACB}|LTW2024\\LTW2024.csproj|solutionrelative:ltw2024\\ui\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E38CCD39-012E-439B-92A2-6B37005CDACB}|LTW2024\\LTW2024.csproj|d:\\aaaaaaaaaaaaaaaaaa\\spkt\\ltw\\ltw2024\\ltw2024\\ui\\menu.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E38CCD39-012E-439B-92A2-6B37005CDACB}|LTW2024\\LTW2024.csproj|solutionrelative:ltw2024\\ui\\menu.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E38CCD39-012E-439B-92A2-6B37005CDACB}|LTW2024\\LTW2024.csproj|d:\\aaaaaaaaaaaaaaaaaa\\spkt\\ltw\\ltw2024\\ltw2024\\ui\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E38CCD39-012E-439B-92A2-6B37005CDACB}|LTW2024\\LTW2024.csproj|solutionrelative:ltw2024\\ui\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E38CCD39-012E-439B-92A2-6B37005CDACB}|LTW2024\\LTW2024.csproj|d:\\aaaaaaaaaaaaaaaaaa\\spkt\\ltw\\ltw2024\\ltw2024\\ui\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{E38CCD39-012E-439B-92A2-6B37005CDACB}|LTW2024\\LTW2024.csproj|D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\ltw2024\\ui\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E38CCD39-012E-439B-92A2-6B37005CDACB}|LTW2024\\LTW2024.csproj|solutionrelative:ltw2024\\ui\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E38CCD39-012E-439B-92A2-6B37005CDACB}|LTW2024\\LTW2024.csproj|D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\ltw2024\\ui\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E38CCD39-012E-439B-92A2-6B37005CDACB}|LTW2024\\LTW2024.csproj|solutionrelative:ltw2024\\ui\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E38CCD39-012E-439B-92A2-6B37005CDACB}|LTW2024\\LTW2024.csproj|D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\ltw2024\\ui\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E38CCD39-012E-439B-92A2-6B37005CDACB}|LTW2024\\LTW2024.csproj|solutionrelative:ltw2024\\ui\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,71 +42,103 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Menu.cs",
+              "DocumentMoniker": "D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\LTW2024\\UI\\Menu.cs",
+              "RelativeDocumentMoniker": "LTW2024\\UI\\Menu.cs",
+              "ToolTip": "D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\LTW2024\\UI\\Menu.cs",
+              "RelativeToolTip": "LTW2024\\UI\\Menu.cs",
+              "ViewState": "AQIAAK0AAAAAAAAAAAAMwL0AAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T07:33:14.818Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Login.cs",
+              "Title": "ProductManagement.cs",
+              "DocumentMoniker": "D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\LTW2024\\UI\\ProductManagement.cs",
+              "RelativeDocumentMoniker": "LTW2024\\UI\\ProductManagement.cs",
+              "ToolTip": "D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\LTW2024\\UI\\ProductManagement.cs",
+              "RelativeToolTip": "LTW2024\\UI\\ProductManagement.cs",
+              "ViewState": "AQIAAJIAAAAAAAAAAAAjwKMAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T08:22:47.614Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Login.cs [Design]",
               "DocumentMoniker": "D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\LTW2024\\UI\\Login.cs",
               "RelativeDocumentMoniker": "LTW2024\\UI\\Login.cs",
-              "ToolTip": "D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\LTW2024\\UI\\Login.cs",
-              "RelativeToolTip": "LTW2024\\UI\\Login.cs",
-              "ViewState": "AQIAAEMAAAAAAAAAAADgv0QAAAAkAAAA",
+              "ToolTip": "D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\LTW2024\\UI\\Login.cs [Design]",
+              "RelativeToolTip": "LTW2024\\UI\\Login.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-04T16:21:37.456Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-05T09:01:25.184Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Menu.Designer.cs",
-              "DocumentMoniker": "D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\LTW2024\\UI\\Menu.Designer.cs",
-              "RelativeDocumentMoniker": "LTW2024\\UI\\Menu.Designer.cs",
-              "ToolTip": "D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\LTW2024\\UI\\Menu.Designer.cs",
-              "RelativeToolTip": "LTW2024\\UI\\Menu.Designer.cs",
-              "ViewState": "AQIAAO4AAAAAAAAAAADgv/sAAABDAAAA",
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\LTW2024\\UI\\MainForm.cs",
+              "RelativeDocumentMoniker": "LTW2024\\UI\\MainForm.cs",
+              "ToolTip": "D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\LTW2024\\UI\\MainForm.cs",
+              "RelativeToolTip": "LTW2024\\UI\\MainForm.cs",
+              "ViewState": "AQIAADoAAAAAAAAAAAAawFEAAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-04T17:15:55.701Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-05T08:56:31.731Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "MainForm.cs [Design]",
               "DocumentMoniker": "D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\LTW2024\\UI\\MainForm.cs",
               "RelativeDocumentMoniker": "LTW2024\\UI\\MainForm.cs",
               "ToolTip": "D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\LTW2024\\UI\\MainForm.cs [Design]",
               "RelativeToolTip": "LTW2024\\UI\\MainForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-04T16:44:08.411Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-05T08:56:17.509Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Home.cs",
+              "DocumentMoniker": "D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\LTW2024\\UI\\Home.cs",
+              "RelativeDocumentMoniker": "LTW2024\\UI\\Home.cs",
+              "ToolTip": "D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\LTW2024\\UI\\Home.cs",
+              "RelativeToolTip": "LTW2024\\UI\\Home.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAewCEAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T08:54:30.115Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Home.cs [Design]",
+              "DocumentMoniker": "D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\LTW2024\\UI\\Home.cs",
+              "RelativeDocumentMoniker": "LTW2024\\UI\\Home.cs",
+              "ToolTip": "D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\LTW2024\\UI\\Home.cs [Design]",
+              "RelativeToolTip": "LTW2024\\UI\\Home.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T08:54:25.066Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Menu.cs [Design]",
-              "DocumentMoniker": "D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\LTW2024\\UI\\Menu.cs",
-              "RelativeDocumentMoniker": "LTW2024\\UI\\Menu.cs",
-              "ToolTip": "D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\LTW2024\\UI\\Menu.cs [Design]",
-              "RelativeToolTip": "LTW2024\\UI\\Menu.cs [Design]",
+              "Title": "StaffManagement.cs",
+              "DocumentMoniker": "D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\LTW2024\\UI\\StaffManagement.cs",
+              "RelativeDocumentMoniker": "LTW2024\\UI\\StaffManagement.cs",
+              "ToolTip": "D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\LTW2024\\UI\\StaffManagement.cs",
+              "RelativeToolTip": "LTW2024\\UI\\StaffManagement.cs",
+              "ViewState": "AQIAAC4BAAAAAAAAAAAQwD4BAABEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-04T16:20:25.4Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Menu.cs",
-              "DocumentMoniker": "D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\LTW2024\\UI\\Menu.cs",
-              "RelativeDocumentMoniker": "LTW2024\\UI\\Menu.cs",
-              "ToolTip": "D:\\aaaaaaaaaaaaaaaaaa\\SPKT\\LTW\\LTW2024\\LTW2024\\UI\\Menu.cs",
-              "RelativeToolTip": "LTW2024\\UI\\Menu.cs",
-              "ViewState": "AQIAADgBAAAAAAAAAADwvzYBAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-04T08:42:22.591Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-05T08:43:40.562Z"
             }
           ]
         }

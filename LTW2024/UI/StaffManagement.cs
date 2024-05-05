@@ -255,9 +255,8 @@ namespace LTW2024.UI
                     }
                     else
                     {
-                        newMaNV = "NV000";
+                        newMaNV = "NV001";
                     }
-                    MessageBox.Show(newMaNV);
                     string gioiTinh = rbMale.Checked ? "Nam" : "Nữ";
                     NhanVien nhanVien = new NhanVien
                     {
@@ -278,6 +277,7 @@ namespace LTW2024.UI
                         Role = cbRole.SelectedItem.ToString(),
                     };
                     context.NhanViens.Add(nhanVien);
+                    context.SaveChanges();
                     context.TaiKhoans.Add(taiKhoan);
                     context.SaveChanges();
                     MessageBox.Show("Thêm thông tin thành công!!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -314,45 +314,53 @@ namespace LTW2024.UI
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            int rowIndex = gwStaff.CurrentCell.RowIndex;
-            string firstCellValueAsString = "";
-            if (rowIndex >= 0 && rowIndex < gwStaff.Rows.Count)
+            if (cbRole.Text.Contains("sysadmin"))
             {
-                // Lấy dòng tương ứng với ô đã chọn
-                DataGridViewRow row = gwStaff.Rows[rowIndex];
-                object firstCellValue = row.Cells[0].Value;
-
-                // Kiểm tra nếu giá trị không null trước khi sử dụng
-                if (firstCellValue != null)
+                MessageBox.Show("Bạn không thể người ngang quyền hạn!!!", "Thất bại!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                int rowIndex = gwStaff.CurrentCell.RowIndex;
+                string firstCellValueAsString = "";
+                if (rowIndex >= 0 && rowIndex < gwStaff.Rows.Count)
                 {
-                    firstCellValueAsString = firstCellValue.ToString();
-                    //MessageBox.Show(firstCellValueAsString);
+                    // Lấy dòng tương ứng với ô đã chọn
+                    DataGridViewRow row = gwStaff.Rows[rowIndex];
+                    object firstCellValue = row.Cells[0].Value;
+
+                    // Kiểm tra nếu giá trị không null trước khi sử dụng
+                    if (firstCellValue != null)
+                    {
+                        firstCellValueAsString = firstCellValue.ToString();
+                        //MessageBox.Show(firstCellValueAsString);
+                    }
+                }
+                using (var context = new DBGroceryContext())
+                {
+                    try
+                    {
+                        // Tìm và lấy ra các tài khoản có tham chiếu đến nhân viên cần xóa
+                        var taiKhoansToDelete = context.TaiKhoans.Where(tk => tk.MaNV.Contains(firstCellValueAsString)).ToList();
+
+                        // Xóa các tài khoản có tham chiếu đến nhân viên
+                        context.TaiKhoans.RemoveRange(taiKhoansToDelete);
+
+                        // Lưu thay đổi vào cơ sở dữ liệu
+                        context.SaveChanges();
+
+                        // Sau đó, bạn có thể tiếp tục xóa nhân viên từ bảng NhanViens
+                        var nhanViensToDelete = context.NhanViens.Where(nv => nv.MaNV.Contains(firstCellValueAsString)).ToList();
+                        context.NhanViens.RemoveRange(nhanViensToDelete);
+                        context.SaveChanges();
+                        MessageBox.Show("Xóa thành công!!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    catch (SqlException)
+                    {
+                        MessageBox.Show("Xóa không thành công!!!", "Thất bại!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
             }
-            using(var context = new DBGroceryContext())
-            {
-                try
-                {
-                    // Tìm và lấy ra các tài khoản có tham chiếu đến nhân viên cần xóa
-                    var taiKhoansToDelete = context.TaiKhoans.Where(tk => tk.MaNV.Contains(firstCellValueAsString)).ToList();
-
-                    // Xóa các tài khoản có tham chiếu đến nhân viên
-                    context.TaiKhoans.RemoveRange(taiKhoansToDelete);
-
-                    // Lưu thay đổi vào cơ sở dữ liệu
-                    context.SaveChanges();
-
-                    // Sau đó, bạn có thể tiếp tục xóa nhân viên từ bảng NhanViens
-                    var nhanViensToDelete = context.NhanViens.Where(nv => nv.MaNV.Contains(firstCellValueAsString)).ToList();
-                    context.NhanViens.RemoveRange(nhanViensToDelete);
-                    context.SaveChanges();
-                    MessageBox.Show("Xóa thành công!!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                catch (SqlException)
-                {
-                    MessageBox.Show("Xóa không thành công!!!", "Thất bại!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
+            
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)

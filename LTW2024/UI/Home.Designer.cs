@@ -61,6 +61,7 @@
             this.pnTop10Pro.Name = "pnTop10Pro";
             this.pnTop10Pro.Size = new System.Drawing.Size(1278, 561);
             this.pnTop10Pro.TabIndex = 1;
+            this.pnTop10Pro.Paint += new System.Windows.Forms.PaintEventHandler(this.pnTop10Pro_Paint);
             // 
             // panel2
             // 
@@ -146,6 +147,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Home";
             this.Text = "Home";
+            this.Load += new System.EventHandler(this.Home_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel5.ResumeLayout(false);

@@ -37,13 +37,12 @@
             this.btnProduct = new Guna.UI2.WinForms.Guna2Button();
             this.btnStaff = new Guna.UI2.WinForms.Guna2Button();
             this.btnMenu = new Guna.UI2.WinForms.Guna2Button();
-            this.btnHome = new Guna.UI2.WinForms.Guna2Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lbName = new System.Windows.Forms.Label();
             this.lbTime = new System.Windows.Forms.Label();
+            this.lbName = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -79,7 +78,6 @@
             this.panel2.Controls.Add(this.btnProduct);
             this.panel2.Controls.Add(this.btnStaff);
             this.panel2.Controls.Add(this.btnMenu);
-            this.panel2.Controls.Add(this.btnHome);
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
@@ -122,7 +120,7 @@
             this.btnProvider.Image = global::LTW2024.Properties.Resources.warehouse;
             this.btnProvider.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnProvider.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnProvider.Location = new System.Drawing.Point(0, 376);
+            this.btnProvider.Location = new System.Drawing.Point(0, 307);
             this.btnProvider.Name = "btnProvider";
             this.btnProvider.ShadowDecoration.Parent = this.btnProvider;
             this.btnProvider.Size = new System.Drawing.Size(243, 69);
@@ -143,7 +141,7 @@
             this.btnProduct.Image = global::LTW2024.Properties.Resources.box;
             this.btnProduct.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnProduct.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnProduct.Location = new System.Drawing.Point(0, 307);
+            this.btnProduct.Location = new System.Drawing.Point(0, 238);
             this.btnProduct.Name = "btnProduct";
             this.btnProduct.ShadowDecoration.Parent = this.btnProduct;
             this.btnProduct.Size = new System.Drawing.Size(243, 69);
@@ -164,7 +162,7 @@
             this.btnStaff.Image = global::LTW2024.Properties.Resources.network;
             this.btnStaff.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnStaff.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnStaff.Location = new System.Drawing.Point(0, 238);
+            this.btnStaff.Location = new System.Drawing.Point(0, 169);
             this.btnStaff.Name = "btnStaff";
             this.btnStaff.ShadowDecoration.Parent = this.btnStaff;
             this.btnStaff.Size = new System.Drawing.Size(243, 69);
@@ -185,34 +183,13 @@
             this.btnMenu.Image = global::LTW2024.Properties.Resources.shopping_cart;
             this.btnMenu.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnMenu.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnMenu.Location = new System.Drawing.Point(0, 169);
+            this.btnMenu.Location = new System.Drawing.Point(0, 100);
             this.btnMenu.Name = "btnMenu";
             this.btnMenu.ShadowDecoration.Parent = this.btnMenu;
             this.btnMenu.Size = new System.Drawing.Size(243, 69);
             this.btnMenu.TabIndex = 2;
             this.btnMenu.Text = "Menu";
             this.btnMenu.Click += new System.EventHandler(this.guna2Button2_Click);
-            // 
-            // btnHome
-            // 
-            this.btnHome.CheckedState.Parent = this.btnHome;
-            this.btnHome.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnHome.CustomImages.Parent = this.btnHome;
-            this.btnHome.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnHome.FillColor = System.Drawing.Color.Tomato;
-            this.btnHome.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHome.ForeColor = System.Drawing.Color.White;
-            this.btnHome.HoverState.Parent = this.btnHome;
-            this.btnHome.Image = global::LTW2024.Properties.Resources.home;
-            this.btnHome.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnHome.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnHome.Location = new System.Drawing.Point(0, 100);
-            this.btnHome.Name = "btnHome";
-            this.btnHome.ShadowDecoration.Parent = this.btnHome;
-            this.btnHome.Size = new System.Drawing.Size(243, 69);
-            this.btnHome.TabIndex = 1;
-            this.btnHome.Text = "Home";
-            this.btnHome.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // panel4
             // 
@@ -234,6 +211,36 @@
             this.panel3.TabIndex = 1;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
+            // lbTime
+            // 
+            this.lbTime.AutoSize = true;
+            this.lbTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTime.Location = new System.Drawing.Point(796, 92);
+            this.lbTime.Name = "lbTime";
+            this.lbTime.Size = new System.Drawing.Size(103, 38);
+            this.lbTime.TabIndex = 2;
+            this.lbTime.Text = "label2";
+            // 
+            // lbName
+            // 
+            this.lbName.AutoSize = true;
+            this.lbName.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbName.Location = new System.Drawing.Point(177, 92);
+            this.lbName.Name = "lbName";
+            this.lbName.Size = new System.Drawing.Size(217, 38);
+            this.lbName.TabIndex = 1;
+            this.lbName.Text = "Lê Chí Nghĩa";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Mistral", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(32, 51);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(147, 39);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "XIN CHÀO!";
+            // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.BackgroundImage = global::LTW2024.Properties.Resources.logo;
@@ -244,36 +251,6 @@
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(245, 168);
             this.flowLayoutPanel1.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Mistral", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(32, 51);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(152, 41);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "XIN CHÀO!";
-            // 
-            // lbName
-            // 
-            this.lbName.AutoSize = true;
-            this.lbName.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbName.Location = new System.Drawing.Point(177, 92);
-            this.lbName.Name = "lbName";
-            this.lbName.Size = new System.Drawing.Size(227, 39);
-            this.lbName.TabIndex = 1;
-            this.lbName.Text = "Lê Chí Nghĩa";
-            // 
-            // lbTime
-            // 
-            this.lbTime.AutoSize = true;
-            this.lbTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTime.Location = new System.Drawing.Point(796, 92);
-            this.lbTime.Name = "lbTime";
-            this.lbTime.Size = new System.Drawing.Size(109, 39);
-            this.lbTime.TabIndex = 2;
-            this.lbTime.Text = "label2";
             // 
             // timer1
             // 
@@ -312,7 +289,6 @@
         private Guna.UI2.WinForms.Guna2Button btnProduct;
         private Guna.UI2.WinForms.Guna2Button btnStaff;
         private Guna.UI2.WinForms.Guna2Button btnMenu;
-        private Guna.UI2.WinForms.Guna2Button btnHome;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel pnMain;
         private System.Windows.Forms.Label lbTime;

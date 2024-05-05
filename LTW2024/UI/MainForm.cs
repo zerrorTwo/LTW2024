@@ -73,7 +73,14 @@ namespace LTW2024.UI
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new StaffManagement());
+            if (DBCurrentLogin.GetCurrentLoginInfo().Role.Contains("sysadmin"))
+            {
+                OpenChildForm(new StaffManagement());
+            }
+            else
+            {
+                MessageBox.Show("Bạn không có quyền truy cập!!!", "Thất bại!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)

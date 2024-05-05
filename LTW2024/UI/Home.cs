@@ -21,5 +21,18 @@ namespace LTW2024.UI
         {
 
         }
+
+        private void pnTop10Pro_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Home_Load(object sender, EventArgs e)
+        {
+            using (var context = new DBGroceryContext())
+            {
+                //var query1 = context.
+            }
+        }
     }
 }

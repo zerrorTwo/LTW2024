@@ -15,10 +15,16 @@ namespace LTW2024.Entities
         public string MaSP { get; set; }
 
         [StringLength(50)]
+        [Index(IsUnique = true)]
         public string TenSP { get; set; }
 
         public decimal? DonGia { get; set; }
 
+        [NotMapped]
+        public bool IsSoLuongLonHon0
+        {
+            get { return SoLuong > 0; }
+        }
         public int SoLuong { get; set; }
 
         public ICollection<ChiTietPhieuNhap> ChiTietPhieuNhaps { get; set; }

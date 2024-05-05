@@ -48,6 +48,7 @@
             this.gwSellProduct = new System.Windows.Forms.DataGridView();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gwProduct)).BeginInit();
             this.panel3.SuspendLayout();
@@ -112,6 +113,7 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.btnDeletePro);
             this.panel3.Controls.Add(this.btnCancle);
             this.panel3.Controls.Add(this.btnPay);
@@ -233,13 +235,14 @@
             // lbMoneyPay
             // 
             this.lbMoneyPay.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMoneyPay.Location = new System.Drawing.Point(255, 525);
+            this.lbMoneyPay.Location = new System.Drawing.Point(220, 525);
             this.lbMoneyPay.Name = "lbMoneyPay";
             this.lbMoneyPay.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lbMoneyPay.Size = new System.Drawing.Size(192, 32);
             this.lbMoneyPay.TabIndex = 10;
-            this.lbMoneyPay.Text = "0 đ";
+            this.lbMoneyPay.Text = "0";
             this.lbMoneyPay.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbMoneyPay.Click += new System.EventHandler(this.lbMoneyPay_Click);
             // 
             // tbQty
             // 
@@ -325,6 +328,18 @@
             this.label3.Text = "Tên KH:";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(418, 525);
+            this.label2.Name = "label2";
+            this.label2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label2.Size = new System.Drawing.Size(26, 32);
+            this.label2.TabIndex = 16;
+            this.label2.Text = "đ";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -371,5 +386,6 @@
         private Guna.UI2.WinForms.Guna2Button btnPay;
         private Guna.UI2.WinForms.Guna2Button btnCancle;
         private Guna.UI2.WinForms.Guna2Button btnDeletePro;
+        private System.Windows.Forms.Label label2;
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LTW2024.Entities;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -77,7 +78,119 @@ namespace LTW2024.UI
             using (var context =  new DBGroceryContext())
             {
 
+                try
+                {
+                    string newMaKH = "";
+                    var lastKH = context.KhachHangs.OrderByDescending(nv => nv.MaKH).FirstOrDefault();
+
+                    if (lastKH != null)
+                    {
+                        string lastMaKH = lastKH.MaKH;
+                        // Sử dụng mã nhân viên của nhân viên cuối cùng ở đây
+                        string last3Chars = lastMaKH.Substring(Math.Max(0, lastMaKH.Length - 3)); // Lấy 3 ký tự cuối
+                        int last3CharsAsNumber = int.Parse(last3Chars);
+                        last3CharsAsNumber++;
+                        // Chuyển đổi số thành chuỗi có 3 ký tự
+                        string newNumberString = last3CharsAsNumber.ToString("D3");
+
+                        // Sử dụng PadLeft để thêm số 0 vào trước nếu cần
+                        newMaKH = "KH" + newNumberString.PadLeft(3, '0');
+                    }
+                    else
+                    {
+                        newMaKH = "KH001";
+                    }
+
+                    string newMaHD = "";
+                    var lastHD = context.HoaDonBanHangs.OrderByDescending(nv => nv.MaHD).FirstOrDefault();
+
+                    if (lastHD != null)
+                    {
+                        string lastMaHD = lastHD.MaHD;
+                        // Sử dụng mã nhân viên của nhân viên cuối cùng ở đây
+                        string last3Chars = lastMaHD.Substring(Math.Max(0, lastMaHD.Length - 3)); // Lấy 3 ký tự cuối
+                        int last3CharsAsNumberHD = int.Parse(last3Chars);
+                        last3CharsAsNumberHD++;
+                        // Chuyển đổi số thành chuỗi có 3 ký tự
+                        string newNumberStringHD = last3CharsAsNumberHD.ToString("D3");
+
+                        // Sử dụng PadLeft để thêm số 0 vào trước nếu cần
+                        newMaHD = "HD" + newNumberStringHD.PadLeft(3, '0');
+                    }
+                    else
+                    {
+                        newMaHD = "HD001";
+                    }
+                    if (tbNameCus.Text == null && tbNumberCus.Text == null)
+                    {
+                        tbNameCus.Text = "Khach hang moi";
+                        tbNumberCus.Text = "0999999999";
+                    }
+
+                    KhachHang khach = new KhachHang
+                    {
+                        MaKH = newMaKH,
+                        TenKH = tbNameCus.Text,
+                        SoDT = tbNumberCus.Text
+                    };
+                    context.KhachHangs.Add(khach);
+                    context.SaveChanges();
+                    HoaDonBanHang hoaDon = new HoaDonBanHang
+                    {
+                        MaHD = newMaHD,
+                        NgayDatHang = DateTime.Now,
+                        TongSoTien = decimal.Parse(lbMoneyPay.Text),
+                        MaNV = DBCurrentLogin.GetCurrentLoginInfo().MaNV,
+                        MaKH = newMaKH
+                    };
+                    context.HoaDonBanHangs.Add(hoaDon);
+                    context.SaveChanges();
+                    foreach (DataGridViewRow row in gwSellProduct.Rows)
+                    {
+                        // Kiểm tra xem hàng hiện tại không phải là hàng mới
+                        if (!row.IsNewRow)
+                        {
+                            // Lấy giá trị từ các ô trong hàng
+                            string maSP = row.Cells["MaSP"].Value?.ToString();
+                            string tenSP = row.Cells["TenSP"].Value?.ToString();
+                            string donGia = row.Cells["DonGia"].Value?.ToString();
+                            string soLuong = row.Cells["SoLuong"].Value?.ToString();
+                            // Tiếp tục xử lý dữ liệu, ví dụ: tạo đối tượng ChiTietHD và thêm vào danh sách
+                            ChiTietHD chiTiet = new ChiTietHD
+                            {
+                                MaHD = newMaHD,
+                                MaSP = maSP,
+                                DonGia = decimal.Parse(donGia),
+                                SoLuongSP = int.Parse(soLuong),
+                            };
+                            context.ChiTietHDs.Add(chiTiet);
+                            context.SaveChanges();
+                            // Thực hiện các hành động khác ở đây
+                            var sanPham = context.SanPhams.FirstOrDefault(tk => tk.MaSP == (maSP));
+                            if (sanPham != null)
+                            {
+                                sanPham.MaSP = maSP;
+                                sanPham.TenSP = tenSP;
+                                sanPham.SoLuong = sanPham.SoLuong - int.Parse(soLuong);
+                                sanPham.DonGia = decimal.Parse(donGia);
+                                // Lưu thay đổi vào cơ sở dữ liệu
+                                context.SaveChanges();
+                            }
+                        }
+                    }
+                    context.SaveChanges();
+                    
+                    MessageBox.Show("Thanh toán thành công!!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    gwSellProduct.Rows.Clear();
+                    tbQty.Text = "0";
+                    UpdateTotalMoney();
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Kiểm tra lại thông tin!!!", "Thất bại!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
+       
         }
 
         private void btnCancle_Click(object sender, EventArgs e)
@@ -92,7 +205,7 @@ namespace LTW2024.UI
             using (var context = new DBGroceryContext())
             {
                 var query = context.SanPhams
-                      .Select(s => new { s.MaSP, s.TenSP, s.DonGia }); // Chọn các cột MaSP, TenSP, DonGia
+                      .Select(s => new { s.MaSP, s.TenSP, s.DonGia, s.SoLuong }); // Chọn các cột MaSP, TenSP, DonGia
 
                 // Thêm các cột vào gwProduct và gán dữ liệu từ query vào các cột tương ứng
                 gwProduct.Columns.Add("MaSP", "Mã Sản Phẩm");
@@ -103,6 +216,8 @@ namespace LTW2024.UI
 
                 gwProduct.Columns.Add("DonGia", "Đơn Giá");
                 gwProduct.Columns["DonGia"].DataPropertyName = "DonGia";
+                gwProduct.Columns.Add("SoLuong", "Số lượng");
+                gwProduct.Columns["SoLuong"].DataPropertyName = "SoLuong";
 
                 // Gán dữ liệu từ query vào gwProduct.DataSource
                 gwProduct.DataSource = query.ToList();
@@ -116,7 +231,7 @@ namespace LTW2024.UI
         private void gwProduct_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             // Kiểm tra xem ô đã được chọn có phải là một hàng không và hàng đó có dữ liệu không
-            if (e.RowIndex >= 0 && e.RowIndex < gwProduct.Rows.Count - 1)
+            if (e.RowIndex >= 0 && e.RowIndex < gwProduct.Rows.Count )
             {
                 if (gwSellProduct.Columns.Count == 0)
                 {
@@ -185,13 +300,26 @@ namespace LTW2024.UI
             {
                 // Lấy chỉ số hàng đầu tiên được chọn
                 int selectedRowIndex = gwSellProduct.SelectedRows[0].Index;
-
-                // Kiểm tra xem chỉ số hàng hợp lệ và giá trị trong tbQty có chứa trong cột "SoLuong" không
-                if (selectedRowIndex >= 0 && gwSellProduct.Rows[selectedRowIndex].Cells["SoLuong"].Value.ToString() != tbQty.Text)
+                string ma = gwSellProduct.Rows[selectedRowIndex].Cells["MaSP"].Value.ToString();
+                using (var context  = new DBGroceryContext())
                 {
-                    // Cập nhật giá trị của cột "SoLuong" trong hàng được chọn
-                    gwSellProduct.Rows[selectedRowIndex].Cells["SoLuong"].Value = tbQty.Text;
+                    var q = context.SanPhams.Select(s => new {s.MaSP, s.SoLuong}).Where(c => c.MaSP.Contains(ma)).FirstOrDefault();
+                    if (int.Parse(gwSellProduct.Rows[selectedRowIndex].Cells["SoLuong"].Value.ToString()) > q.SoLuong)
+                    {
+                        MessageBox.Show("Số lượng vượt quá số lượng tồn!!!");
+                        tbQty.Text = q.SoLuong.ToString();
+                    }
+                    else
+                    {
+                        // Kiểm tra xem chỉ số hàng hợp lệ và giá trị trong tbQty có chứa trong cột "SoLuong" không
+                        if (selectedRowIndex >= 0 && gwSellProduct.Rows[selectedRowIndex].Cells["SoLuong"].Value.ToString() != tbQty.Text)
+                        {
+                            // Cập nhật giá trị của cột "SoLuong" trong hàng được chọn
+                            gwSellProduct.Rows[selectedRowIndex].Cells["SoLuong"].Value = tbQty.Text;
+                        }
+                    }
                 }
+                
             }
             UpdateTotalMoney();
         }
@@ -273,7 +401,7 @@ namespace LTW2024.UI
                     
                 }
             }
-            lbMoneyPay.Text = totalMoney.ToString() + " đ";
+            lbMoneyPay.Text = totalMoney.ToString();
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
@@ -290,7 +418,7 @@ namespace LTW2024.UI
                     string searchText = tbSearch.Text.Trim();
 
                     // Lấy danh sách sản phẩm từ database dựa trên điều kiện tìm kiếm
-                    var products = context.SanPhams.Select(s => new { s.MaSP, s.TenSP, s.DonGia }).Where(p => p.TenSP.Contains(searchText)).ToList();
+                    var products = context.SanPhams.Select(s => new { s.MaSP, s.TenSP, s.DonGia,s.SoLuong }).Where(p => p.TenSP.Contains(searchText)).ToList();
 
                     // Xóa dữ liệu hiện có trong DataGridView trước khi thêm dữ liệu mới
                     gwProduct.DataSource = null ;
@@ -330,9 +458,17 @@ namespace LTW2024.UI
                         }
                     }
                 }
-
-
             }
+        }
+
+        private void lbMoneyPay_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
